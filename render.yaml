@@ -15,7 +15,7 @@ services:
       - key: DB_CONNECTION
         value: pgsql
       - key: DB_HOST
-        value: postgresql://surigao_health_user:Bv18A1HWIXJMuASL5s23yYJ3oMM3cV6p@dpg-ct05f768ii6s73fhjan0-a.singapore-postgres.render.com/surigao_health
+        value: dpg-ct05f768ii6s73fhjan0-a.singapore-postgres.render.com
       - key: DB_PORT
         value: 5432
       - key: DB_DATABASE
