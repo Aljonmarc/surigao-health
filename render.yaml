@@ -1,31 +1,26 @@
 services:
   - type: web
-    name: surigao-health
-    env: php
-    buildCommand: |
-      composer install --no-dev --optimize-autoloader
-      npm install
-      npm run build
-    startCommand: php artisan serve --host 0.0.0.0 --port 3000
-    plan: free
+    name: laravel-app
+    env: docker
+    dockerfilePath: ./Dockerfile
     envVars:
-      - key: NODE_VERSION
-        value: 20.11.1
       - key: APP_ENV
         value: production
+      - key: APP_KEY
+        value: base64:SBBig6vneOytrjug5CliWTC1pPPRhzBTTOLtlbnhhys=
       - key: APP_DEBUG
         value: false
-      - key: APP_KEY
-        value: <your-app-key>
+      - key: APP_URL
+        value: https://surigao-health.onrender.com
       - key: DB_CONNECTION
         value: mysql
       - key: DB_HOST
-        value: <your-database-host>
+        value: YOUR_DATABASE_HOST
       - key: DB_PORT
-        value: 3306
+        value: YOUR_DATABASE_PORT
       - key: DB_DATABASE
-        value: <your-database-name>
+        value: YOUR_DATABASE_NAME
       - key: DB_USERNAME
-        value: <your-database-username>
+        value: YOUR_DATABASE_USERNAME
       - key: DB_PASSWORD
-        value: <your-database-password>
+        value: YOUR_DATABASE_PASSWORD
