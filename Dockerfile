@@ -29,8 +29,8 @@ RUN composer install --no-dev --optimize-autoloader
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt-get install -y nodejs
 RUN npm install && npm run build
 
-# Expose port 8000 for Laravel development
-EXPOSE 8000
+EXPOSE 4000
+
 
 # Start the Laravel server
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
