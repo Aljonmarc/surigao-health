@@ -13,7 +13,7 @@ services:
       - APP_DEBUG=false
       - APP_URL=https://surigao-health.onrender.com
       - DB_CONNECTION=pgsql
-      - DB_HOST=dpg-ct05f768ii6s73fhjan0-a
+      - DB_HOST=dpg-ct05f768ii6s73fhjan0-a.singapore-postgres.render.com
       - DB_PORT=5432
       - DB_DATABASE=surigao_health
       - DB_USERNAME=surigao_health_user
