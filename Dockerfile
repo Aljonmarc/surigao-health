@@ -1,5 +1,5 @@
 # Use an official PHP image with Composer
-FROM php:8.2-fpm
+FROM php:8.3-fpm
 
 # Install system dependencies, including PostgreSQL client and extensions
 RUN apt-get update && apt-get install -y \
