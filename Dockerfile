@@ -1,7 +1,7 @@
 # Use an official PHP image with Composer
 FROM php:8.2-fpm
 
-# Install system dependencies
+# Install system dependencies, including PostgreSQL client and extensions
 RUN apt-get update && apt-get install -y \
     git \
     unzip \
@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     zip \
     libpng-dev \
-    && docker-php-ext-install pdo pdo_mysql mbstring zip gd
+    && docker-php-ext-install pdo pdo_pgsql mbstring zip gd
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
