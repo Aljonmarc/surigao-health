@@ -33,4 +33,4 @@ EXPOSE 4000
 
 
 # Start the Laravel server
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=4000"]
