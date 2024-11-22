@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: surigao-health
+    env: php
+    buildCommand: |
+      composer install --no-dev --optimize-autoloader
+      npm install
+      npm run build
+    startCommand: php artisan serve --host 0.0.0.0 --port 3000
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.1
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_KEY
+        value: <your-app-key>
+      - key: DB_CONNECTION
+        value: mysql
+      - key: DB_HOST
+        value: <your-database-host>
+      - key: DB_PORT
+        value: 3306
+      - key: DB_DATABASE
+        value: <your-database-name>
+      - key: DB_USERNAME
+        value: <your-database-username>
+      - key: DB_PASSWORD
+        value: <your-database-password>
