@@ -83,17 +83,16 @@ return [
         ],
 
 'pgsql' => [
-    'driver' => 'pgsql',
-    'host' => env('DB_HOST', 'dpg-ct05f768ii6s73fhjan0-a'),
-    'port' => env('DB_PORT', '5432'),
-    'database' => env('DB_DATABASE', 'surigao_health'),
-    'username' => env('DB_USERNAME', 'surigao_health_user'),
-    'password' => env('DB_PASSWORD', 'Bv18A1HWIXJMuASL5s23yYJ3oMM3cV6p'),
-    'charset' => 'utf8',
-    'prefix' => '',
-    'prefix_indexes' => true,
-    'search_path' => 'public',
-    'sslmode' => 'prefer',
+    'driver'   => 'pgsql',
+    'host'     => env('DB_HOST', '127.0.0.1'),
+    'port'     => env('DB_PORT', '5432'),
+    'database' => env('DB_DATABASE'),
+    'username' => env('DB_USERNAME'),
+    'password' => env('DB_PASSWORD'),
+    'charset'  => 'utf8',
+    'collation'=> 'utf8_unicode_ci',
+    'prefix'   => '',
+    'schema'   => 'public',
 ],
 
 

@@ -9,7 +9,7 @@ services:
       - key: APP_KEY
         value: base64:SBBig6vneOytrjug5CliWTC1pPPRhzBTTOLtlbnhhys=
       - key: APP_DEBUG
-        value: false
+        value: true
       - key: APP_URL
         value: https://surigao-health.onrender.com
       - key: DB_CONNECTION
