@@ -13,11 +13,11 @@ services:
       - APP_DEBUG=false
       - APP_URL=https://surigao-health.onrender.com
       - DB_CONNECTION=pgsql
-      - DB_HOST=dpg-ct05f768ii6s73fhjan0-a
+      - DB_HOST=dpg-ct24ill6l47c73bk71og-a
       - DB_PORT=5432
-      - DB_DATABASE=surigao_health
-      - DB_USERNAME=surigao_health_user
-      - DB_PASSWORD=Bv18A1HWIXJMuASL5s23yYJ3oMM3cV6p
+      - DB_DATABASE=cortel
+      - DB_USERNAME=cortel_user
+      - DB_PASSWORD=A8jPq6qlwzFMXF81we3E5Cjolvw5cjK7
     volumes:
       - .:/var/www/html
     networks:

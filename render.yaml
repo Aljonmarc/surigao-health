@@ -15,12 +15,12 @@ services:
       - key: DB_CONNECTION
         value: pgsql
       - key: DB_HOST
-        value: dpg-ct05f768ii6s73fhjan0-a
+        value: dpg-ct24ill6l47c73bk71og-a
       - key: DB_PORT
         value: 5432
       - key: DB_DATABASE
-        value: surigao_health
+        value: cortel
       - key: DB_USERNAME
-        value: surigao_health_user
+        value: cortel_user
       - key: DB_PASSWORD
-        value: Bv18A1HWIXJMuASL5s23yYJ3oMM3cV6p
+        value: A8jPq6qlwzFMXF81we3E5Cjolvw5cjK7
