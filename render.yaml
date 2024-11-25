@@ -15,7 +15,7 @@ services:
       - key: DB_CONNECTION
         value: pgsql
       - key: DB_HOST
-        value: dpg-csu3mhq3esus73c6ohtg-a.singapore-postgres.render.com
+        value: dpg-ct05f768ii6s73fhjan0-a
       - key: DB_PORT
         value: 5432
       - key: DB_DATABASE
